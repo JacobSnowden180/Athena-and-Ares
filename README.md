@@ -1,6 +1,6 @@
 # Athena & Ares
 
-A static site for [athenaandares.com](https://athenaandares.com): Jacob Snowden’s two dogs, and the urban mushing (scooterjoring) they do on an ordinary GoTrax XR Pro in North Austin.
+A static site for [athenaandares.com](https://athenaandares.com): my two dogs, Athena and Ares, and the urban mushing (scooterjoring) we do on an ordinary GoTrax XR Pro in Austin.
 
 There is no build step. HTML, CSS, and a small vanilla script are the site. The repository root is what gets deployed.
 
@@ -24,7 +24,7 @@ Open [http://localhost:8080](http://localhost:8080). Check a phone-width window 
 | `journal/sharing-the-pull.html` | Starter post, how-to style |
 | `map.html` | Illustrated story map (not a street map) |
 | `gallery.html` | All photos, with a lightbox |
-| `about.html` | Why Jacob does this, in his voice |
+| `about.html` | Why I do this, in first person |
 | `contact.html` | Email link only |
 | `404.html` | Missing-page fallback |
 
@@ -67,7 +67,7 @@ Use one of the two shapes already here:
 - **Trail note** (`evening-lap.html`): first person, a night or a habit, no invented street, date, or landmark.
 - **Field guide** (`sharing-the-pull.html`): a how-to with headings, a short list, and the safety rules when they apply.
 
-Do not add a calendar date you are not sure of. Do not name an exact neighborhood, street, apartment, or business as a destination. “Austin” and “North Austin” are the place names the site uses.
+Do not add a calendar date you are not sure of. Do not name an exact neighborhood, street, apartment, or business as a destination. Austin is the only place name the site uses.
 
 A new card looks like this:
 
