@@ -33,7 +33,7 @@ index.html, dogs.html, mushing.html, gallery.html, about.html, contact.html, 404
 css/styles.css
 js/site.js           menu, scroll reveals, gallery filter, lightbox, video
 images/              responsive WebP and JPEG at 480, 840, and 1242 wide
-video/run-clip.mp4   silent loop, plus run-clip.vtt and a poster in images/
+video/dog-run.mp4    homepage loop, plus dog-run.vtt and images/dog-run-poster.jpg
 fonts/               self-hosted Fraunces, Source Serif 4, and Outfit (OFL)
 favicon.svg, favicon-32.png, apple-touch-icon.png, icon-512.png
 images/og.jpg        share image

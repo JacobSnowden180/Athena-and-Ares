@@ -448,27 +448,27 @@ body.nav-open {
 }
 
 .lantern {
-  margin: 0;
+  margin-inline: auto;
   justify-self: center;
-  width: min(100%, 26rem);
+  align-self: center;
+  width: min(80vw, 21.25rem);
 }
 
 .lantern-frame {
   position: relative;
-  border-radius: 10rem 10rem 1.4rem 1.4rem;
+  border-radius: 4px;
   overflow: hidden;
+  line-height: 0;
   background: #0c0a08;
-  box-shadow:
-    0 0 0 1px rgba(228, 194, 122, 0.35),
-    0 24px 60px rgba(0, 0, 0, 0.35);
 }
 
 .lantern video {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 9 / 16;
+  aspect-ratio: 720 / 408;
   object-fit: cover;
+  object-position: center;
   background: #0c0a08;
 }
 
