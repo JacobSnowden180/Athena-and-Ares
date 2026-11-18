@@ -448,9 +448,10 @@ body.nav-open {
 }
 
 .lantern {
-  margin: 0;
+  margin-inline: auto;
   justify-self: center;
-  width: min(100%, 26rem);
+  align-self: center;
+  width: min(100%, 26.25rem);
 }
 
 .lantern-frame {
@@ -468,7 +469,7 @@ body.nav-open {
   width: 100%;
   height: auto;
   aspect-ratio: 9 / 16;
-  object-fit: cover;
+  object-fit: contain;
   background: #0c0a08;
 }
 
