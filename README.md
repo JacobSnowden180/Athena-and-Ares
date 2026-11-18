@@ -19,10 +19,6 @@ Open [http://localhost:8080](http://localhost:8080). Check a phone-width window 
 | `index.html` | Home, with the looping run clip |
 | `dogs.html` | Athena and Ares |
 | `mushing.html` | The urban mushing guide |
-| `journal.html` | Trail log index |
-| `journal/evening-lap.html` | Starter post, adventure-log style |
-| `journal/sharing-the-pull.html` | Starter post, how-to style |
-| `map.html` | Illustrated story map (not a street map) |
 | `gallery.html` | All photos, with a lightbox |
 | `about.html` | Why I do this, in first person |
 | `contact.html` | Email link only |
@@ -33,10 +29,9 @@ The header, navigation, and footer are copied into each HTML file. If you change
 ## File structure
 
 ```
-index.html, dogs.html, mushing.html, journal.html, map.html, gallery.html, about.html, contact.html, 404.html
-journal/             one HTML file per trail-log post
+index.html, dogs.html, mushing.html, gallery.html, about.html, contact.html, 404.html
 css/styles.css
-js/site.js           menu, scroll reveals, gallery filter, lightbox, map markers, video
+js/site.js           menu, scroll reveals, gallery filter, lightbox, video
 images/              responsive WebP and JPEG at 480, 840, and 1242 wide
 video/run-clip.mp4   silent loop, plus run-clip.vtt and a poster in images/
 fonts/               self-hosted Fraunces, Source Serif 4, and Outfit (OFL)
@@ -48,39 +43,6 @@ _headers             security and cache headers
 ```
 
 Phone originals are not in the repo. Web images were exported with EXIF orientation applied and all metadata stripped, including any GPS. Do not put originals back into the site.
-
-## How to add a blog post
-
-Posts are plain HTML. There is no CMS and no template engine.
-
-1. Copy `journal/evening-lap.html` to a new file, for example `journal/boots-on.html`. Use a short lowercase slug with hyphens.
-2. In the new file, change:
-   - `<title>` and the meta description
-   - `link rel="canonical"` and every `og:url` / `og:title` / `og:description` / `twitter:*` so they use `https://athenaandares.com/journal/boots-on.html`
-   - the `<h1>` and the article body
-   - keep `aria-current="page"` on the Trail Log link in the header
-3. On `journal.html`, duplicate one `<article class="log-card">` inside `.log-list` and point it at the new file. The comment above that list marks the spot.
-4. Add the new URL to `sitemap.xml`.
-
-Use one of the two shapes already here:
-
-- **Trail note** (`evening-lap.html`): first person, a night or a habit, no invented street, date, or landmark.
-- **Field guide** (`sharing-the-pull.html`): a how-to with headings, a short list, and the safety rules when they apply.
-
-Do not add a calendar date you are not sure of. Do not name an exact neighborhood, street, apartment, or business as a destination. Austin is the only place name the site uses.
-
-A new card looks like this:
-
-```html
-<article class="log-card">
-  <p class="meta">Trail note</p>
-  <h2><a href="/journal/boots-on.html">Boots on</a></h2>
-  <p>One or two sentences that do not give away a route.</p>
-  <p><a href="/journal/boots-on.html">Read the note</a></p>
-</article>
-```
-
-Photos inside a post use the same `<picture>` pattern as the gallery (see below). Root-relative URLs (`/images/...`, `/css/styles.css`) work from the `journal/` folder.
 
 ## How to add a photo
 
@@ -140,5 +102,3 @@ Do not add the home address, an apartment name, a live map embed, or GPS metadat
 ## Design notes
 
 The look is a night-ride field journal: warm paper, olive, one ember accent, Fraunces for titles, Source Serif 4 for reading. Motion is limited to a gentle reveal and a slight shift of the hero stars, and it turns off under `prefers-reduced-motion`. The run clip stays muted and looping until someone uses the controls. If the visitor has asked for reduced motion, or the browser is in data-saver mode, the clip waits on its poster.
-
-The adventure map is illustrated. It is not a trace of a real route.
