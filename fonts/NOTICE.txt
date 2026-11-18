@@ -1,0 +1,10 @@
+Athena & Ares uses these fonts, subset to Latin and served from /fonts:
+
+- Fraunces (The Fraunces Project Authors)
+- Outfit (The Outfit Project Authors)
+- Source Serif 4 (The Source Serif Project Authors)
+
+Each is licensed under the SIL Open Font License, Version 1.1.
+https://openfontlicense.org/open-font-license-1-1/
+
+The fonts were not modified except by subsetting to the Latin range provided by the Google Fonts CSS API.

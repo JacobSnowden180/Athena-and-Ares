@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Athena and Ares">
+  <rect width="64" height="64" rx="14" fill="#16130f"/>
+  <path fill="#f4efe6" d="M42 10c-11.6 2.4-19 12-19 22.2S30.2 52.2 42 54.4C32.2 51.2 26 42.4 26 32.2S32.4 13 42 10z"/>
+  <circle cx="48" cy="18" r="6" fill="#c85a32"/>
+  <circle cx="16" cy="18" r="1.5" fill="#e4c27a"/>
+  <circle cx="13" cy="28" r="1.1" fill="#e4c27a"/>
+  <circle cx="21" cy="13" r="1" fill="#e4c27a"/>
+</svg>
