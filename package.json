@@ -1,0 +1,7 @@
+{
+  "name": "athena-and-ares",
+  "private": true,
+  "devDependencies": {
+    "wrangler": "4.163.0"
+  }
+}
