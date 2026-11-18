@@ -1310,10 +1310,6 @@ body.nav-open {
     object-position: center 40%;
   }
 
-  .paths {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
   .marker-list {
     grid-template-columns: 1fr 1fr;
   }
